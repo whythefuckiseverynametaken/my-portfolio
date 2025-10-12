@@ -134,7 +134,7 @@ body {
 
 
 .section-text-side {margin-left: 15px;}
-.about-me-depth-text {margin-left: 15px; font-weight: 400;}
+.about-me-depth-text {margin-left: 15px; font-weight: 400; font-size: 30px;}
 .fun-facts-text {text-align: center;}
 
 /* Process block: make the images small and consistent and text beside them */
@@ -326,4 +326,5 @@ body {
   }
 
   .header-text-info { flex: 1 1 100%; min-width: 0; }
+
 }
