@@ -1,0 +1,489 @@
+/* ===== Updated site styles (use to replace your current CSS) ===== */
+
+/* Reset & base */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; padding: 0; }
+body {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: #fff;
+  overflow-x: hidden;
+  color: #111;
+}
+
+h1, h2, h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Container helper */
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 18px; }
+
+/* Header / hero */
+.main-header {
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 15px;
+  margin: 2vh auto 3vh;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  padding: 4vh 4%;
+  flex-wrap: wrap;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.08);
+  justify-content: center;
+
+  /* make the header fill at least 90% of the viewport height */
+  min-height: 90vh;
+  /* allow content to determine larger height if needed */
+  height: auto;
+}
+.header-text-info { flex: 1 1 520px; min-width: 300px; max-width: 900px; }
+.profile-pic {
+  width: clamp(140px, 20vw, 360px);
+  height: clamp(140px, 20vw, 360px);
+  border-radius: 14px;
+  object-fit: cover;
+  flex: 0 0 clamp(140px, 20vw, 360px);
+  box-shadow: 0 10px 36px rgba(0,0,0,0.14);
+}
+
+/* Headline / texts */
+.intro-text {
+  color: rgb(255, 194, 103);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  font-size: clamp(24px, 4.8vw, 56px);
+  margin: 0 0 14px 0;
+  line-height: 1.02;
+}
+.description-text {
+  display: inline-block;
+  background-color: rgb(255, 194, 103);
+  color: rgb(20,20,20);
+  padding: 6px 12px;
+  margin: 6px 0 12px 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  font-size: clamp(12px, 1.8vw, 20px);
+  border-radius: 8px;
+}
+.about-text {
+  color: rgb(20,20,20);
+  margin: 8px 0 0 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-size: clamp(12px, 1.8vw, 18px);
+  line-height: 1.25;
+  max-width: 48rem;
+}
+
+.info-buttons {display:flex; gap:18px; margin-top:18px; flex-wrap:wrap; align-items:center; height: 50px;}
+
+.work-scroll-button,
+.about-scroll-button {
+    background-color: rgb(255, 194, 103);
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    font-size: 25px;
+    border-radius: 50px;
+    align-content: center;
+    cursor:pointer;
+
+    font-size: 1.5rem;
+}
+
+.work-scroll-button:hover,
+.about-scroll-button:hover {
+  background-color: rgb(255, 180, 70);
+  transform: scale(1.03);
+}
+
+/* underline accent */
+.text-underline {
+  margin-top: 8px;
+  background-color: rgb(255, 194, 103);
+  width: 64px;
+  height: 10px;
+  border-radius: 20px;
+}
+
+/* Buttons inside header */
+.info-buttons { width: 100%; display:flex; gap:12px; margin-top:12px; flex-wrap:wrap; }
+.scroll-button {
+  background-color: rgb(255, 194, 103);
+  color: #000;
+  font-weight: 700;
+  font-size: clamp(12px, 2.4vw, 20px);
+  padding: 10px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+/*background: linear-gradient(180deg, #fbb03b 0%, #f9a825 100%);
+/* === About section layout fixes === */
+.about-me { width: 100%; background: linear-gradient(180deg, #fcca7a 0%, #ffb949 100%);; padding: 36px 0; box-sizing: border-box; align-content: center;}
+.what-i-do { width: 100%;  display:flex; gap: 18px; flex-wrap:wrap; justify-content: center; align-items: center; margin-top: 100px;}
+
+
+.section-text-side {font-size: 2.6rem; font-weight: 700; margin-left: 15px; margin: auto; text-align: center;}
+.about-me-depth-text { font-size: 1.6rem; margin-left: 15px; font-weight: 100; max-width: 900px; margin: auto; text-align: center;}
+.fun-facts-text {text-align: center;}
+
+/* Process block: make the images small and consistent and text beside them */
+.process {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex: 1 1 280px;
+  min-width: 220px;
+  max-width: 360px;
+
+  min-height: 210px;
+  max-height: 210px;
+
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.process:hover {
+  transform: translateY(-5px);
+}
+
+.process-pic {
+  width: 135px;
+  height: 135px;
+  border-radius: 14px;
+  object-fit: cover;
+  flex: 0 0 96px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+.process-info-text { display:flex; flex-direction:column; gap:8px;}
+.process-headline { font-family: Arial, Helvetica, sans-serif; font-weight:800; margin:0; font-size: clamp(16px, 2.2vw, 20px); }
+.process-text { margin:0; font-size: 0.9rem; color: #2b2b2b; font-weight: 400; }
+
+/* Fun facts: keep as is but ensure badge sizing is responsive */
+.fun-facts { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; width: 90%; margin: 12px auto; }
+.fun-fact {
+  width: clamp(80px, 16vw, 140px);
+  height: clamp(80px, 16vw, 140px);
+  border-radius:50%;
+  background: linear-gradient(145deg, #4b4b4b, #0f0f0f);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.60);
+}
+
+/* badge number/label */
+.badge-number { font-weight:800; font-size: clamp(14px, 4.5vw, 28px); color: #ffea00; line-height:1; text-align:center; }
+.badge-label { font-size: clamp(8px, 1.6vw, 12px); color:#fff; font-weight:700; text-align:center; margin-top:6px; }
+
+/* === Portfolio gallery: grid 2 rows x 4 columns on wide screens === */
+.portfolio { width: 100%; background-color: #fafafa; padding: 36px 0; box-sizing: border-box; }
+.section-section { width: 90%; max-width: 1100px; margin: 0 auto 12px; display:flex; gap:12px; flex-wrap:wrap; justify-content:center; }
+.examples-button { border: 2px solid #000000; color: #000; background: transparent; border-radius: 8px; padding: 10px 20px; transition: 0.2s;}
+.examples-button:hover { background: #000; color: white; cursor: pointer;}
+
+/* Portfolio grid: use CSS Grid for exact 4 columns on desktop, 2 columns on tablet, 1 on mobile */
+.portfolio-examples {
+  width: 95%;
+  max-width: 1700px;
+  margin: 18px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+.map-example-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 0 2px black;
+  display:block;
+}
+
+.map-example-pic:hover {
+  transform: scale(1.03); opacity: 0.95;
+}
+
+/* tablet -> 2 cols, mobile -> 1 col */
+@media (max-width: 1000px) {
+  .portfolio-examples { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .portfolio-examples { grid-template-columns: 1fr; }
+  .section-section { justify-content:center; gap:8px; }
+}
+
+/* === Testimonials: consistent card sizes and grid layout === */
+.testimonials {text-align: center; background-color: rgb(255, 194, 103); padding: 36px 0; box-sizing: border-box; }
+.testimonial-examples {
+  width: 95%;
+  max-width: 1200px;
+  margin: 24px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  align-items: start;
+  justify-items: center;
+}
+.testimonial-background {
+  width: 100%;
+  max-width: 220px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+  background: white;
+  border-radius: 15px;
+
+  margin-top: auto;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4)
+}
+
+.testimonial-background:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 3px black;
+  display:block;
+
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1)
+}
+.testimonial-headline { margin:0; font-size: 16px; text-align:center; }
+
+/* === Contact area adjustments === */
+.contact-me { width:100%; background-color:#fff; padding: 36px 0; box-sizing: border-box; text-align: center;}
+.contact-ways {
+  width: 95%;
+  max-width: 1000px;
+  margin: 24px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 18px;
+  align-items:center;
+  justify-items:center;
+}
+.contact-background {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+  width: 100%;
+  max-width: 200px;
+  padding: 8px;
+  box-sizing: border-box;
+
+  
+}
+.contact-background .testimonial-pic {
+  width: 150px;
+  height: 150px;
+
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4)
+}
+
+:root{
+  --timeline-width:64px;
+  --dot-size:48px;
+  --gap:20px;
+  --btn-active:#ffd08a;
+  --btn-bg:#000;
+  --btn-icon:#fff;
+}
+
+/* Base: vertical right bar for desktop / large screens */
+.timeline {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--timeline-width);
+  z-index: 60;
+  pointer-events: auto;
+}
+.timeline ul {
+  list-style: none;
+  margin: 0;
+  padding: 12px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap);
+  position: relative;
+  max-height: calc(100vh - 40px);
+  overflow: visible;
+  -webkit-overflow-scrolling: touch;
+}
+.timeline ul::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  border-radius: 4px;
+  background: linear-gradient(#111,#222);
+  z-index: 0;
+}
+
+/* Button */
+.timeline-btn {
+  all: unset;
+  cursor: pointer;
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  background: var(--btn-bg);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  position: relative;
+  z-index: 2;
+  transition: transform .14s ease, box-shadow .14s ease, background .14s ease;
+  border: 3px solid rgba(255,255,255,0.03);
+}
+.timeline-btn .icon { width: 20px; height: 20px; fill: var(--btn-icon); }
+.timeline-btn.active { background: var(--btn-active); }
+
+/* focus */
+.timeline-btn:focus { transform: translateY(-4px) scale(1.02); outline: none; }
+
+/* ===== Mobile portrait: bottom compact bar (show instead of hiding) ===== */
+@media (max-width: 720px) and (orientation: portrait) {
+  :root { --dot-size:44px; --gap:12px; --timeline-width:100%; }
+
+  .timeline {
+    right: 12px;
+    left: 12px;
+    top: auto;
+    bottom: 12px;
+    transform: none;
+    width: calc(100% - 24px);
+    height: calc(var(--dot-size) + 28px);
+    border-radius: 999px;
+    background: rgba(255,255,255,0.02); /* subtle backdrop if wanted */
+    display: block;
+    pointer-events: auto;
+  }
+
+  .timeline ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    gap: 12px;
+    max-width: 100%;
+    overflow: visible;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .timeline ul::before { display: none; }
+
+  .timeline-btn {
+    width: var(--dot-size);
+    height: var(--dot-size);
+    border-width: 2px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.28);
+    flex: 0 0 auto;
+  }
+
+  /* avoid clipping: let the horizontal list scroll if there are many buttons */
+  .timeline ul::-webkit-scrollbar { height: 8px; }
+  .timeline ul::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); border-radius: 8px; }
+}
+
+/* ===== Mobile landscape / small landscape screens: vertical but shrink dots ===== */
+@media (max-width: 720px) and (orientation: landscape) {
+  :root { --dot-size:40px; --gap:10px; --timeline-width:56px; }
+
+  .timeline {
+    right: 8px;
+    width: var(--timeline-width);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .timeline ul { gap: var(--gap); padding: 8px 6px; max-height: calc(100vh - 24px); }
+  .timeline-btn { width: var(--dot-size); height: var(--dot-size); border-width:2px; }
+  .timeline ul::before { top: 6px; bottom: 6px; }
+}
+
+/* Ensure icons scale down gracefully */
+.timeline-btn .icon { width: 60%; height: 60%; }
+
+/* Safety: if user rotates quickly, small transitions keep it tidy */
+@media (prefers-reduced-motion: reduce) {
+  .timeline-btn { transition: none; }
+}
+
+/* Accessibility focus */
+.scroll-button:focus, .examples-button:focus, .timeline-btn:focus {
+  outline: 3px solid rgba(255,194,103,0.6);
+  outline-offset: 3px;
+}
+
+/* Small tweaks for very small screens */
+@media (max-width: 420px) {
+  .profile-pic { width: 110px; height: 110px; }
+  .intro-text { font-size: clamp(18px, 6.5vw, 30px); }
+  .process-pic { width: 80px; height: 80px; }
+  .testimonial-pic { width: 110px; height: 110px; }
+  .contact-background .testimonial-pic { width: 80px; height: 80px; }
+}
+
+@media (max-width: 720px) {
+  .main-header {
+    min-height: 56vh; /* smaller on phones so users don't have to scroll too far */
+    padding: 28px 5%;
+    border-radius: 12px;
+    margin: 3vh 8px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    flex: 0 0 120px;
+    margin: 8px auto 0;
+  }
+
+  /* make the buttons smaller/flexible on mobile */
+  .scroll-button {
+    min-width: 120px;
+    width: auto;
+    padding: 10px 14px;
+    font-size: 15px;
+  }
+
+  .header-text-info { flex: 1 1 100%; min-width: 0; }
+}
+
+@media (max-width: 768px) {
+  .work-scroll-button,
+  .about-scroll-button {
+    width: 90%;
+    font-size: 1.2rem;
+    padding: 1.2rem 0;
+    border-radius: 40px;
+    margin: 0.5rem auto;
+    display: block;
+  }
+}
