@@ -90,6 +90,8 @@ h1, h2, h3 {
     border-radius: 50px;
     align-content: center;
     cursor:pointer;
+
+    font-size: 1.6rem;
 }
 
 .about-scroll-button {
@@ -103,6 +105,8 @@ h1, h2, h3 {
     border-radius: 50px;
     align-content: center;
     cursor:pointer;
+
+    font-size: 1.6rem;
 }
 
 
@@ -479,4 +483,5 @@ h1, h2, h3 {
   }
 
   .header-text-info { flex: 1 1 100%; min-width: 0; }
+
 }
