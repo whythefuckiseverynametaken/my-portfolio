@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuubzzz's Portfolio</title>
+    <link rel="stylesheet" href="siteStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Poppins:wght@400;600;700&family=Rubik:wght@400;600&family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header hero" id="section-home" role="banner" aria-label="Home">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content container">
+            <h1 class="intro-text">HI, IM NUUBZZZ
+                <span class="text-underline" aria-hidden="true"></span>
+            </h1>
+
+            <div class="description-text">BUILDER / PROGRAMMER / 3D MODELER</div>
+
+            <div class="info-buttons">
+                <button class="scroll-button work-scroll-button" id="work-button" data-target="#portfolio-section">MY WORK</button>
+                <button class="scroll-button contact-scroll-button" id="contact-button" data-target="#contact-section">CONTACT ME</button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="timeline" aria-label="Page sections">
+        <ul>
+            <li><button type="button" class="timeline-btn" data-target="section-home" aria-label="About" data-label="About">
+            <img src="icons/home.png" alt="About" class="icon">
+            </button></li>
+
+            <li><button type="button" class="timeline-btn" data-target="section-about" aria-label="About" data-label="About">
+            <img src="icons/person.png" alt="About" class="icon">
+            </button></li>
+
+            <li><button type="button" class="timeline-btn" data-target="section-portfolio" aria-label="Work" data-label="Work">
+            <img src="icons/suitcase.png" alt="About" class="icon">
+            </button></li>
+
+            <li><button type="button" class="timeline-btn" data-target="section-testimonials" aria-label="Worked With" data-label="Worked with">
+            <img src="icons/testimonials.png" alt="About" class="icon">
+            </button></li>
+
+            <li><button type="button" class="timeline-btn" data-target="section-contact" aria-label="Contact" data-label="Contact">
+            <img src="icons/contact.png" alt="About" class="icon">
+            </button></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="section-about" class="section">
+            <div class="about-me">
+                <h1 class="section-text-side">WHAT I DO</h1>
+
+                <h1 class="fun-facts-text">I specialize in 3D Modeling, Building maps and Coding!</h1>
+            
+                <div class="what-i-do">
+                    <div class="process">
+                        <img src="icons/map.png" alt="profilePic" class="process-pic">
+                        <div class="process-info-text">
+                            <h3 class="process-headline">Map Building</h3>
+                            <h3 class="process-text">Your game deserves the most beautiful map, describe it to me and ill make it!</h3>
+                        </div>
+                    </div>
+                    <div class="process">
+                        <img src="icons/modeling.png" alt="profilePic" class="process-pic">
+                        <div class="process-info-text">
+                            <h3 class="process-headline">3D Modeling</h3>
+                            <h3 class="process-text">Every game deserves to look as good as it plays, 3D art turns a map into a world worth exploring.</h3>
+                        </div>
+                    </div>
+                    <div class="process">
+                        <img src="icons/computer.png" alt="profilePic" class="process-pic">
+                        <div class="process-info-text">
+                            <h3 class="process-headline">Programming</h3>
+                            <h3 class="process-text">I treat coding as the core of every project, without it the game falls flat!</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="fun-facts-text">My Expertise</h1>
+
+                <div class="fun-facts">
+                    <div class="fun-fact">
+                        <div class="badge-number">3+</div>
+                        <div class="badge-label">YEARS CODING</div>
+                    </div>
+
+                    <div class="fun-fact">
+                        <div class="badge-number">5+</div>
+                        <div class="badge-label">MAP BUILDING</div>
+                    </div>
+
+                    <div class="fun-fact">
+                        <div class="badge-number">30+</div>
+                        <div class="badge-label">HAPPY CLIENTS</div>
+                    </div>
+
+                    <div class="fun-fact">
+                        <div class="badge-number">50+</div>
+                        <div class="badge-label">MAPS BUILT</div>
+                    </div>
+
+                    <div class="fun-fact">
+                        <div class="badge-number">100%</div>
+                        <div class="badge-label">SELF TAUGHT</div>
+                    </div>
+                </div>
+
+                <div class="programs-used">
+                    <div class="program-used">
+                        <img src="icons/blender.png" alt="profilePic" class="program-pic">
+                    </div>
+                    <div class="program-used">
+                        <img src="icons/studio.png" alt="profilePic" class="program-pic">
+                    </div>
+                    <div class="program-used">
+                        <img src="icons/lua.png" alt="profilePic" class="program-pic">
+                    </div>
+                    <div class="program-used">
+                        <img src="icons/javascript.png" alt="profilePic" class="program-pic">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-portfolio" class="section">
+            <div class="portfolio">
+                <h1 class="section-text-side">PORTFOLIO</h1>
+
+                <div class="section-section">
+                    <div class="examples-button" id="maps">MAPS</div>
+                    <div class="examples-button" id="models">3D MODELS</div>
+                    <div class="examples-button" id="coding">PROGRAMMING</div>
+
+                </div>
+                
+                <div class="portfolio-examples" id="portfolio-content">
+                    <img src="maps/mountnoob.png" alt="profilePic" class="map-example-pic">
+                    <img src="maps/dreamscape.png" alt="profilePic" class="map-example-pic">
+                    <img src="maps/pixel.png" alt="profilePic" class="map-example-pic">
+                    <img src="maps/platform_thing.png" alt="profilePic" class="map-example-pic">
+                    <img src="maps/samurai.png" alt="profilePic" class="map-example-pic">
+                    <img src="maps/sheriff_lobby.png" alt="profilePic" class="map-example-pic">
+                    <img src="maps/shooting_range.png" alt="profilePic" class="map-example-pic">
+                    <img src="maps/pixel_world.png" alt="profilePic" class="map-example-pic">
+                </div>
+            </div>
+        </section>
+
+        <section id="section-testimonials" class="section">
+            <div class="testimonials">
+                <h1 class="section-text-side">WORKED WITH</h1>
+                
+                <div class="testimonial-examples">
+                    <div class="testimonial-background">
+                        <img src="testimonials/evan.jpg" alt="profilePic" class="testimonial-pic">
+                        <h1 class="testimonial-headline">Evan Zir</h1>
+                    </div>
+                    <div class="testimonial-background">
+                        <img src="testimonials/tender.jpg" alt="profilePic" class="testimonial-pic">
+                        <h1 class="testimonial-headline">Tender One</h1>
+                    </div>
+                    <div class="testimonial-background">
+                        <img src="testimonials/crackop.jpg" alt="profilePic" class="testimonial-pic">
+                        <h1 class="testimonial-headline">Crackop</h1>
+                    </div>
+                    <div class="testimonial-background">
+                        <img src="testimonials/blakehotz.jpg" alt="profilePic" class="testimonial-pic">
+                        <h1 class="testimonial-headline">ImBlakeHotz</h1>
+                    </div>
+                    <div class="testimonial-background">
+                        <img src="testimonials/lifeless.png" alt="profilePic" class="testimonial-pic">
+                        <h1 class="testimonial-headline">L7FELESS</h1>
+                    </div>
+                    <div class="testimonial-background">
+                        <img src="testimonials/jake.jpg" alt="profilePic" class="testimonial-pic">
+                        <h1 class="testimonial-headline">Jake</h1>
+                    </div>
+                    <div class="testimonial-background">
+                        <img src="testimonials/bladian.jpg" alt="profilePic" class="testimonial-pic">
+                        <h1 class="testimonial-headline">Bladian</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-contact" class="section">
+            <div class="contact-me">
+                <h1 class="section-text-side">CONTACT ME</h1>
+
+                <h1 class="about-me-depth-text">You dream it, I build it. Lets turn pixels into places. My DMs are open!</h1>
+            
+                <div class="contact-ways">
+                    <div class="contact-background">
+                        <img src="icons/roblox.png" alt="profilePic" class="testimonial-pic">
+                        <h1 class="contact-headline">@Nuubzzz1</h1>
+                    </div>
+                    <div class="contact-background">
+                        <img src="icons/discord.png" alt="profilePic" class="testimonial-pic">
+                        <h1 class="contact-headline">Nuubzzz</h1>
+                    </div>
+                    <div class="contact-background">
+                        <img src="icons/twitterbird.png" alt="profilePic" class="testimonial-pic">
+                        <h1 class="contact-headline">@Nuubzzz</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="function.js"></script>
+</body>
+</html>
